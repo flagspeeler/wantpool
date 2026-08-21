@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WantPool Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7faf7;
+      --card: #ffffff;
+      --text: #102018;
+      --muted: #66736b;
+      --line: #dfe6e0;
+      --accent: #17643d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1712;
+        --card: #162019;
+        --text: #eef7f0;
+        --muted: #aab6ae;
+        --line: #2b3a30;
+        --accent: #9ad9b0;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .brand {
+      display: inline-block;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 38px; line-height: 1.1; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin-top: 32px; }
+    p, li { color: var(--muted); }
+    strong { color: var(--text); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+    code {
+      background: color-mix(in srgb, var(--card) 70%, var(--line));
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+    a { color: var(--accent); }
+    .updated { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <span class="brand">WantPool</span>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: August 21, 2026</div>
+
+  <div class="card">
+    <p><strong>WantPool</strong> is a browser extension that helps Discogs users create private collaborative record orders, compare their own Wantlists with a seller's inventory, and share only the records they choose with other participants in a private pool.</p>
+    <p>WantPool is designed around data minimization: a user's complete Wantlist, imported Wantlist CSV, and personal Discogs API token are not uploaded to the WantPool shared backend.</p>
+  </div>
+
+  <h2>1. Data processed locally in your browser</h2>
+  <p>WantPool may store or process the following information locally using Chrome extension storage:</p>
+  <ul>
+    <li>Your display name.</li>
+    <li>Your Discogs username.</li>
+    <li>Your personal Discogs API token.</li>
+    <li>Your Supabase project configuration used by the extension.</li>
+    <li>An optional Discogs Wantlist CSV that you import.</li>
+    <li>Your active WantPool session and local preferences.</li>
+  </ul>
+  <p>Your complete Wantlist, imported CSV, and Discogs API token are intended to remain in your browser and are not intentionally uploaded to the shared WantPool database.</p>
+
+  <h2>2. Discogs data and website content</h2>
+  <p>When you use WantPool on Discogs, the extension may read limited information from the current Discogs page and the Discogs API in order to provide its core functionality. This can include:</p>
+  <ul>
+    <li>The Discogs seller currently being viewed.</li>
+    <li>Seller inventory and listing information.</li>
+    <li>Your own Wantlist data, when you choose the Discogs API option.</li>
+    <li>Possible free-shipping threshold information shown on a Discogs page.</li>
+  </ul>
+  <p>This information is used to find matches between your own wants and the selected seller's inventory. WantPool does not use this access to build a browsing history or advertising profile.</p>
+
+  <h2>3. Data shared with a WantPool group</h2>
+  <p>Only information necessary to operate a shared pool is sent to the WantPool backend. This can include:</p>
+  <ul>
+    <li>Your chosen display name.</li>
+    <li>The Discogs seller associated with the pool.</li>
+    <li>The current cart amount and shipping goal.</li>
+    <li>Records that you explicitly choose to add to the pool.</li>
+    <li>Listing IDs, release IDs, titles, prices, conditions and Discogs listing links for those selected records.</li>
+    <li>Order status information such as Requested, Added, Bought or Unavailable.</li>
+  </ul>
+  <p>Other participants in the same private pool can see the information that you explicitly share with that pool.</p>
+
+  <h2>4. Third-party services</h2>
+  <p>WantPool relies on third-party services for its core functionality:</p>
+  <ul>
+    <li><strong>Discogs</strong> provides marketplace and Wantlist data through its website and API.</li>
+    <li><strong>Supabase</strong> is used to synchronize private WantPool sessions and the records users intentionally share with their group.</li>
+    <li><strong>Google Chrome</strong> provides extension storage and browser APIs used by WantPool.</li>
+  </ul>
+  <p>Use of these services is also subject to their respective privacy policies and terms.</p>
+
+  <h2>5. Data we do not collect for unrelated purposes</h2>
+  <p>WantPool does not intentionally collect health information, payment-card details, precise location, personal communications, or browsing history for advertising or profiling.</p>
+
+  <h2>6. Sale and advertising</h2>
+  <p>WantPool does not sell user data. User data is not used for advertising, creditworthiness, lending decisions, or purposes unrelated to WantPool's core functionality.</p>
+
+  <h2>7. Data retention</h2>
+  <p>Local extension data remains in your browser until you remove it, reset WantPool, or uninstall the extension. Shared pool information may remain in the WantPool backend until it is deleted or the service's retention practices are updated. The project may introduce additional deletion controls in future versions.</p>
+
+  <h2>8. Security</h2>
+  <p>WantPool uses browser-local storage for sensitive local configuration and uses private pool codes and participant/owner tokens for its current collaborative MVP. No system can guarantee absolute security, but WantPool is designed to minimize the amount of personal data sent to the shared backend.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>This Privacy Policy may be updated as WantPool evolves. Material changes to data handling will be reflected in an updated version of this page and, where required, in the Chrome Web Store privacy disclosures.</p>
+
+  <h2>10. Contact</h2>
+  <p>For privacy questions regarding WantPool, please use the developer contact information provided on the WantPool Chrome Web Store listing.</p>
+</main>
+</body>
+</html>
